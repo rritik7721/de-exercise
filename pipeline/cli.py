@@ -61,6 +61,13 @@ def run_pipeline(data_dir_str: str, out_dir_str: str):
 
     # 6. Persistence
     logger.info(f"Persisting results to {out_dir}...")
+    
+    # Canonical sorts per PDF
+    curated_df = curated_df.sort_values(['device_id', 'ts', 'batch_id'])
+    anomalies_df = anomalies_df.sort_values(['rule_id', 'device_id', 'ts'])
+    aggregates_df = aggregates_df.sort_values(['device_id', 'hour_utc'])
+    billing_df = billing_df.sort_values(['site_id', 'hour_utc', 'device_type'])
+
     curated_df.to_parquet(out_dir / 'readings_curated.parquet', index=False)
     anomalies_df.to_parquet(out_dir / 'dq_anomalies.parquet', index=False)
     aggregates_df.to_parquet(out_dir / 'hourly_aggregates.parquet', index=False)

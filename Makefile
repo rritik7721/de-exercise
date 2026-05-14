@@ -4,3 +4,6 @@ setup:
 run:
 	python3 main.py --data-dir ./data --out-dir ./out
 
+test:
+	PYTHONPATH=. pytest tests/
+

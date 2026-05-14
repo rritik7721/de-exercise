@@ -2,3 +2,4 @@ pandas>=2.0.0
 pyarrow
 numpy
 python-json-logger
+pytest

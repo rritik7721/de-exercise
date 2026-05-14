@@ -21,8 +21,8 @@ def aggregate_hourly(df: pd.DataFrame) -> pd.DataFrame:
         if samples_count > 1:
             rates = group['rate'].to_numpy()
 
-            times_ns = group['ts'].astype(np.int64).to_numpy()
-            times = np.floor_divide(times_ns, 1_000_000_000)
+            times_ns = group['ts'].values.astype('datetime64[ns]').astype(np.int64)
+            times = times_ns // 1_000_000_000
             
             delta_t = np.diff(times)
             avg_rates = 0.5 * (rates[:-1] + rates[1:])
