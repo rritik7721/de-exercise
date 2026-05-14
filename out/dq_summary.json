@@ -1,0 +1,21 @@
+{
+  "files_read": 720,
+  "batches_total": 17247,
+  "batches_unique": 16119,
+  "batches_duplicate_discarded": 1128,
+  "empty_batches": 40,
+  "readings_total": 321115,
+  "pre_commissioning_dropped": 16,
+  "readings_kept": 321099,
+  "anomalies_by_rule": {
+    "R3": 375,
+    "R1": 198,
+    "R2": 148,
+    "R4": 80
+  },
+  "anomalies_by_severity": {
+    "warning": 523,
+    "error": 278
+  },
+  "duration_seconds": 5.73
+}

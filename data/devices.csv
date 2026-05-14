@@ -1,0 +1,13 @@
+device_id,site_id,device_type,expected_interval_s,commissioned_at
+dev-001,site-01,type_a,60,2026-04-01T00:00:00.000Z
+dev-002,site-01,type_a,60,2026-04-01T00:00:00.000Z
+dev-003,site-01,type_b,120,2026-04-01T00:00:00.000Z
+dev-004,site-01,type_c,600,2026-04-01T00:00:00.000Z
+dev-005,site-02,type_a,60,2026-04-01T00:00:00.000Z
+dev-006,site-02,type_a,60,2026-04-04T00:00:00.000Z
+dev-007,site-02,type_b,120,2026-04-01T00:00:00.000Z
+dev-008,site-02,type_b,120,2026-04-01T00:00:00.000Z
+dev-009,site-02,type_c,600,2026-04-01T00:00:00.000Z
+dev-010,site-03,type_a,60,2026-04-01T00:00:00.000Z
+dev-011,site-03,type_b,120,2026-04-01T00:00:00.000Z
+dev-012,site-03,type_b,120,2026-04-06T00:00:00.000Z
